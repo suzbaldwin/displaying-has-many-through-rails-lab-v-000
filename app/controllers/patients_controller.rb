@@ -4,4 +4,9 @@ class PatientsController < ApplicationController
     @patient = Patient.find(params[:id])
 
   end
+
+  def index
+    @patients = Patient.all
+  end
+
 end
